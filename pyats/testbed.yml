@@ -1,0 +1,36 @@
+---
+devices:
+  OS10:
+    os: dell
+    platform: os10
+    type: router
+    connections:
+      cli:
+        ip: 10.10.21.16
+        protocol: ssh
+    credentials:
+      default:
+        password: Dell!234!!
+        username: knox
+      enable:
+        password: dell1111
+    custom:
+      abstraction:
+        order: [os, platform]
+  DellOS6:
+    os: dell
+    platform: os6
+    type: router
+    connections:
+      cli:
+        ip: 10.10.21.70
+        protocol: ssh
+    credentials:
+      default:
+        password: dell1111
+        username: knox
+      enable:
+        password: dell1111
+    custom:
+      abstraction:
+        order: [os, platform]
